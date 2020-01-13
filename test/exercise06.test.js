@@ -1,19 +1,19 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-/** Delete this line and the one at the bottom when you're ready for exercise 6
+//Delete this line and the one at the bottom when you're ready for exercise 6
 
 suite('Unit Tests Exercise 6 - Strict Equality', function(){
    // 6. .strictEqual(), .notStrictEqual() 
    // .strictEqual() compares objects using '==='
    test('is a number strictly equal to its string version?', function(){
-    assert.strictEqual( 6, '6' );
+    assert.notStrictEqual( 6, '6' );
    });
    test('is a product strictly equal to its result?',function(){
-    assert.fail( 6, 3*2 );
+    assert.strictEqual( 6, 3*2 );
    });
    test('are two arrays strictly equal?',function(){
-    assert.fail( [1, 'a', {}], [1, 'a', {}] );
+    assert.notStrictEqual( [1, 'a', {}], [1, 'a', {}] );
    });
 });
 
