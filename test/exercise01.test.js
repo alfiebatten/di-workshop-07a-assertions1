@@ -22,5 +22,5 @@ suite('Unit Tests Exercise 1 - The Void', function(){
     // arrays, objects, false or 0 depending on the context
 
 
-    // when the tests pass, you can comment out the following exercise
+    // when the tests pass, you can comment out the following exercise.
 
