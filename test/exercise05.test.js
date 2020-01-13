@@ -1,19 +1,19 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-/** Delete this line and the one at the bottom when you're ready for exercise 5
+// Delete this line and the one at the bottom when you're ready for exercise 5
 
 suite('Unit Tests Exercise 5 - Equality', function(){
    // 5 - .equal() and .notEqual() 
    // .equal() compares objects using '=='
    test('is 12 equal to "12"?', function(){
-    assert.fail( 12, '12', 'numbers are coerced into strings with ==');
+    assert.equal( 12, '12', 'numbers are coerced into strings with ==');
    });
    test('is 6*"2" equal to "12"?',function(){
-    assert.fail( 6 * '2', '12', 'no more hints...');
+    assert.equal( 6 * '2', '12', 'no more hints...');
    });
    test('is 6+"2" equal to "12"?',function(){
-    assert.fail( 6 + '2', '12', 'type your error message if you want' );
+    assert.notEqual( 6 + '2', '12', 'type your error message if you want' );
    });
 });
 
