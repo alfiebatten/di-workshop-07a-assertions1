@@ -1,7 +1,7 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-/** Delete this line and the one at the bottom when you're ready for exercise 4 
+// Delete this line and the one at the bottom when you're ready for exercise 4 
 
 suite('Unit Tests Exercise 4 - Truth', function(){
    // 4 - Use assert.isTrue() or assert.isNotTrue() to make the tests pass.
@@ -9,13 +9,13 @@ suite('Unit Tests Exercise 4 - Truth', function(){
    // .isFalse() and .isNotFalse() also exist.
 
    test('is true true?', function(){
-    assert.fail( null, 'null is not undefined');
+    assert.isNotTrue( null, 'null is not undefined');
    });
    test('is a double negation true?',function(){
-    assert.fail( undefined, 'undefined IS undefined');
+    assert.isNotTrue( undefined, 'undefined IS undefined');
    });
    test('is a truthy object true?',function(){
-    assert.fail( 'hello', 'a string is not undefined');
+    assert.isNotFalse( 'hello', 'a string is not undefined');
    });
 });
 
