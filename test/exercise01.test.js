@@ -9,10 +9,10 @@ suite('Unit Tests Exercise 1 - The Void', function(){
     // try not to change anything other than the `assert.fail()` in the following code
     test('Is null null?', function(){
       // change the below to 'assert.isNull()' and watch the first test pass
-      assert.fail(null, 'this is an optional error description - e.g. null is null');
+      assert.isNull(null, 'this is an optional error description - e.g. null is null');
     });
     test('Is 1 null?', function(){
-      assert.fail( 1, '1 is not null');
+      assert.isNotNull( 1, '1 is not null');
     });
   });
 
